@@ -1,0 +1,78 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Dark background */
+    color: #eee; /* Light text color */
+}
+
+.testimonials {
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonials h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.testimonial-description {
+    font-size: 1em;
+    color: #aaa;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Testimonials Grid */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for 2x2 layout */
+    gap: 30px; /* Spacing between grid items */
+    margin-top: 30px;
+}
+
+.testimonial {
+    background-color: #222; /* Slightly lighter background for testimonials */
+    padding: 30px;
+    border-radius: 8px;
+    position: relative; /* For positioning quote mark */
+}
+
+.quote-mark {
+    font-size: 4em;
+    color: #555; /* Subdued color for quote mark */
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.testimonial-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align to the right */
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-name {
+    font-weight: bold;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
