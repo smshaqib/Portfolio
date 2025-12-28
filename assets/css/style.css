@@ -419,93 +419,125 @@ section {
     margin: 0 auto;
 }
 
-/* Education Timeline */
-.timeline {
-    position: relative;
-    padding: 2rem 0;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary));
-    transform: translateX(-50%);
-}
-
-.timeline-item {
+/* Education Grid */
+.education-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin-bottom: 4rem;
-    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
 }
 
-.timeline-item:nth-child(even) .timeline-content {
-    grid-column: 2;
-}
-
-.timeline-item:nth-child(even) .timeline-empty {
-    grid-column: 1;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: var(--accent-primary);
-    border-radius: 50%;
-    box-shadow: 0 0 0 8px var(--bg-dark), 0 0 20px var(--glow);
-    z-index: 10;
-}
-
-.timeline-content {
+.education-card {
     background: var(--bg-card);
     padding: 2.5rem;
     border-radius: 20px;
     border: 1px solid var(--border);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.timeline-content:hover {
-    transform: translateY(-5px);
+.education-card:hover {
+    transform: translateY(-8px);
     border-color: var(--accent-primary);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
-.timeline-content h3 {
-    font-size: 1.5rem;
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.education-info h3 {
+    font-size: 1.4rem;
     color: var(--accent-primary);
     margin-bottom: 0.5rem;
 }
 
-.timeline-content .institution {
-    font-size: 1.2rem;
+.education-info .institution {
+    font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    color: var(--text-primary);
 }
 
-.timeline-content .duration {
+.education-card .duration {
     color: var(--text-muted);
     font-size: 0.95rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.education-card .edu-details {
+    color: var(--text-secondary);
+    line-height: 1.7;
 }
 
 .gpa-badge {
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    background: rgba(99, 102, 241, 0.2);
+    padding: 0.4rem 0.8rem;
+    background: rgba(99, 102, 241, 0.1);
     color: var(--accent-primary);
-    border-radius: 20px;
-    font-size: 0.9rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
     font-weight: 700;
-    margin-top: 1rem;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    white-space: nowrap;
+}
+
+/* Updated Experience Card */
+.experience-card {
+    background: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.experience-card.current {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 20px var(--glow);
+}
+
+.current-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-title h3 {
+    font-size: 1.6rem;
+    color: var(--accent-primary);
+    margin-bottom: 0.3rem;
+}
+
+.experience-org {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.experience-period {
+    color: var(--text-muted);
+    font-weight: 500;
 }
 
 /* Research & Publications */
