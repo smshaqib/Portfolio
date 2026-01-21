@@ -16,731 +16,803 @@
         <div class="orb orb-3"></div>
     </div>
 
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo">SM Shaqib</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div style="display: flex; gap: 1rem; align-items: center;">
+    <!-- Layout: Left Sidebar + Main Content -->
+    <div class="layout">
+        <aside class="sidebar" id="sidebar" aria-label="Admissions sidebar">
+            <div class="sidebar-top">
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Open/close sidebar">☰</button>
                 <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">🌓</button>
-                <button class="mobile-toggle" id="mobileToggle">☰</button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Advancing AI Through Research & Innovation</h1>
-                <p class="subtitle">AI Agent Developer · NLP Researcher · ML Engineer</p>
-                <p class="bio">
-                    I'm an AI Agent Developer at StudyNet and a Research Assistant at the DIU NLP & ML Lab.
-                    I specialize in Natural Language Processing, Large Language Models (LLMs), and Machine Learning.
-                    I'm currently focused on building RAG-based intelligent systems, autonomous decision-making
-                    frameworks, and explainable AI solutions for real-world academic and professional challenges.
-                </p>
-
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <span class="stat-number">7+</span>
-                        <span class="stat-label">Publications</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">3.9</span>
-                        <span class="stat-label">CGPA</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Awards</span>
-                    </div>
-                </div>
-
-                <div class="cta-buttons">
-                    <a href="#research" class="btn btn-primary">
-                        View Publications →
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        Get in Touch
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="profile-wrapper">
-                    <div class="profile-ring"></div>
-                    <img src="assets/images/shaqib.jpg" alt="SM Shaqib" class="profile-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">PROFESSIONAL JOURNEY</span>
-                <h2 class="section-title">Experience</h2>
-                <p class="section-description">
-                    Contributing to cutting-edge research and mentoring the next generation of AI practitioners
-                </p>
             </div>
 
-            <div class="experience-grid">
-                <div class="experience-card fade-in current">
-                    <span class="current-badge">Current Role</span>
-                    <div class="experience-header">
-                        <div class="experience-title">
-                            <h3>AI Agent Developer</h3>
-                            <p class="experience-org">StudyNet</p>
-                        </div>
-                        <div class="experience-period">
-                            Oct 2025 - Present
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Building an RAG-based LLM system using FAISS vector database and Django Framework.
-                        Developed custom agents to assist students in finding information related to higher education,
-                        optimizing information retrieval and user interaction.
-                    </p>
+            <div class="sidebar-profile">
+                <div class="sidebar-avatar">
+                    <img src="assets/images/shaqib.jpg" alt="SM Shaqib" class="sidebar-avatar-img">
                 </div>
-
-                <div class="experience-card fade-in">
-                    <div class="experience-header">
-                        <div class="experience-title">
-                            <h3>Research Assistant</h3>
-                            <p class="experience-org">DIU NLP & ML Lab</p>
-                        </div>
-                        <div class="experience-period">
-                            June 2025 - Dec 2025
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Collaborated with a professor from Deakin University, Australia, on detecting fraudulent
-                        activities in bKash online transactions using NLP-based techniques. Focus areas include
-                        sentiment analysis, transfer learning for computer vision, and LLM-powered tool development.
-                    </p>
-                </div>
-
-                <div class="experience-card fade-in">
-                    <div class="experience-header">
-                        <div class="experience-title">
-                            <h3>Trainer</h3>
-                            <p class="experience-org">Advance ML & DL Bootcamp, DIU NLP & ML Lab</p>
-                        </div>
-                        <div class="experience-period">
-                            Sep 2024 - May 2025
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Trained 30+ students in ML/DL fundamentals and guided them through the research paper
-                        publication process. Delivered comprehensive training on neural networks, model development,
-                        and practical applications in real-world scenarios.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">ACADEMIC FOUNDATION</span>
-                <h2 class="section-title">Education</h2>
-                <p class="section-description">
-                    Building a strong foundation in computer science and engineering
-                </p>
-            </div>
-
-            <div class="education-grid">
-                <div class="education-card fade-in">
-                    <div class="education-header">
-                        <div class="education-info">
-                            <h3>B.Sc. in Computer Science and Engineering</h3>
-                            <p class="institution">Daffodil International University, Dhaka</p>
-                        </div>
-                        <span class="gpa-badge">3.90/4.00</span>
-                    </div>
-                    <p class="duration">Sep 2021 - Sep 2025</p>
-                    <p class="edu-details">
-                        Focused on artificial intelligence, machine learning, and natural language processing.
-                        Active member of the DIU NLP & ML Lab, contributing to state-of-the-art research
-                        and publishing in Q2 journals.
-                    </p>
-                </div>
-
-                <div class="education-card fade-in">
-                    <div class="education-header">
-                        <div class="education-info">
-                            <h3>Higher Secondary Certificate (HSC)</h3>
-                            <p class="institution">Dr. Mahbubur Rahman Mollah College</p>
-                        </div>
-                        <span class="gpa-badge">5.00/5.00</span>
-                    </div>
-                    <p class="duration">2018 - 2020</p>
-                </div>
-
-                <div class="education-card fade-in">
-                    <div class="education-header">
-                        <div class="education-info">
-                            <h3>Secondary School Certificate (SSC)</h3>
-                            <p class="institution">Motijheel Model High School & College</p>
-                        </div>
-                        <span class="gpa-badge">5.00/5.00</span>
-                    </div>
-                    <p class="duration">2016 - 2017</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research & Publications Section -->
-    <section id="research">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">ACADEMIC CONTRIBUTIONS</span>
-                <h2 class="section-title">Research & Publications</h2>
-                <p class="section-description">
-                    Advancing the field through rigorous research in NLP, computer vision, and machine learning
-                </p>
-            </div>
-
-            <div class="research-grid">
-                <div class="research-card fade-in">
-                    <div class="research-meta">
-                        <span class="research-badge published">Discover Life (Q2)</span>
-                        <span class="research-badge">Explainable AI</span>
-                    </div>
-                    <h3>A transfer learning approach to classify insect diversity based on explainable AI</h3>
-                    <p class="research-authors">SM Shaqib et al. | 2025</p>
-                    <p class="research-description">
-                        Introduced an explainable AI framework for insect classification achieving high accuracy and
-                        interpretable insights. Published in Discover Life (Q2).
-                    </p>
-                </div>
-
-                <div class="research-card fade-in">
-                    <div class="research-meta">
-                        <span class="research-badge published">DIGITAL HEALTH (Q2)</span>
-                        <span class="research-badge">Medical AI</span>
-                    </div>
-                    <h3>Explainable AI for skin disease classification using Grad-CAM and transfer learning</h3>
-                    <p class="research-authors">SM Shaqib et al. | 2025</p>
-                    <p class="research-description">
-                        Developed a transparent classification system for skin diseases leveraging Grad-CAM for
-                        visual explanations and transfer learning for high accuracy. Published in DIGITAL HEALTH.
-                    </p>
-                </div>
-
-                <div class="research-card fade-in">
-                    <div class="research-meta">
-                        <span class="research-badge published">IEEE ICCCNT</span>
-                        <span class="research-badge">NLP</span>
-                    </div>
-                    <h3>Performance Analysis of LSTM and Bi-LSTM Model with Different Optimizers in Bangla Sentiment
-                        Analysis</h3>
-                    <p class="research-authors">SM Shaqib et al. | 2024</p>
-                    <p class="research-description">
-                        Explored LSTM/Bi-LSTM architectures for Bangla sentiment analysis, optimizing for high
-                        accuracy in low-resource language processing.
-                    </p>
-                </div>
-
-                <div class="research-card fade-in">
-                    <div class="research-meta">
-                        <span class="research-badge published">RTIP2R</span>
-                        <span class="research-badge">Segmentation</span>
-                    </div>
-                    <h3>Enhanced U-Net with VGG16 Backbone and Attention for Nasal Sinus Disease Segmentation</h3>
-                    <p class="research-authors">SM Shaqib et al. | 2025</p>
-                    <p class="research-description">
-                        Presented an automated segmentation system for nasal sinus diseases using a modified U-Net.
-                        Published in RTIP2R (In press).
-                    </p>
-                </div>
-
-                <div class="research-card fade-in">
-                    <div class="research-meta">
-                        <span class="research-badge published">arXiv</span>
-                        <span class="research-badge">Object Detection</span>
-                    </div>
-                    <h3>Vehicle Speed Detection System Utilizing YOLOv8</h3>
-                    <p class="research-authors">SM Shaqib et al. | 2024</p>
-                    <p class="research-description">
-                        Developed a real-time system for traffic monitoring and speed estimation using modern YOLOv8
-                        object detection. Available on arXiv:2406.07710.
-                    </p>
-                </div>
-
-                <div class="research-card fade-in">
-                    <div class="research-meta">
-                        <span class="research-badge">Additional Work</span>
-                    </div>
-                    <h3>Construction Safety & Agricultural AI</h3>
-                    <p class="research-description">
-                        Ongoing research in strawberry freshness evaluation (Springer Nature) and safety equipment
-                        detection using YOLOv7 (arXiv:2406.07707).
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">BUILDING SOLUTIONS</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-description">
-                    Practical applications of AI and ML research in real-world scenarios
-                </p>
-            </div>
-
-            <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <span class="project-type">Medical AI</span>
-                        <h3>Nasal Sinus Disease Segmentation</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">
-                            Developed an automated medical image segmentation platform using a modified U-Net
-                            architecture with attention mechanisms. This system assists in diagnosing nasal sinus
-                            diseases with high precision and is deployed for clinical research exploration.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">U-Net</span>
-                            <span class="tech-tag">Medical Imaging</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://huggingface.co/spaces/smshaqib" class="project-link" target="_blank">
-                                Hugging Face →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <span class="project-type">LLM Application</span>
-                        <h3>LLM-Powered PDF Summarization Tool</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">
-                            Built an end-to-end NLP application that automates document analysis and summarization using
-                            HuggingFace API and Streamlit. The tool processes large PDFs, extracts key insights, and
-                            enables semantic search with interactive Q&A capabilities, showcasing practical applications
-                            of retrieval-augmented generation and LLM-based information extraction.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">HuggingFace</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">RAG</span>
-                            <span class="tech-tag">NLP</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/smshaqib" class="project-link" target="_blank">
-                                View Project →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <span class="project-type">Deep Learning</span>
-                        <h3>Bangla Sentiment Analysis System</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">
-                            Developed a comprehensive sentiment analysis system for Bangla text using LSTM and Bi-LSTM
-                            architectures. Implemented multiple optimization strategies and conducted extensive
-                            performance
-                            analysis. The system demonstrates state-of-the-art accuracy in low-resource language
-                            processing.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Keras</span>
-                            <span class="tech-tag">LSTM</span>
-                            <span class="tech-tag">NLP</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/smshaqib" class="project-link" target="_blank">
-                                GitHub →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <span class="project-type">Computer Vision</span>
-                        <h3>Construction Safety Monitoring System</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">
-                            Created an AI-powered safety monitoring system that detects vehicle speeds and recognizes
-                            safety equipment in construction environments. Uses real-time object detection and tracking
-                            to ensure compliance with safety regulations and prevent accidents.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">YOLO</span>
-                            <span class="tech-tag">Computer Vision</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/smshaqib" class="project-link" target="_blank">
-                                View Details →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <span class="project-type">Transfer Learning</span>
-                        <h3>Insect Classification with Explainable AI</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">
-                            Implemented an explainable deep learning model for insect species classification. The system
-                            not only classifies insects with high accuracy but also visualizes the features that
-                            contribute
-                            to classification decisions, making the model interpretable for ecological researchers.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Grad-CAM</span>
-                            <span class="tech-tag">Transfer Learning</span>
-                            <span class="tech-tag">XAI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/smshaqib" class="project-link" target="_blank">
-                                GitHub →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <span class="project-type">Agricultural AI</span>
-                        <h3>Real-Time Strawberry Freshness Detector</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">
-                            Developed an efficient real-time system for evaluating strawberry freshness using transfer
-                            learning. The lightweight model can run on edge devices and provides instant quality
-                            assessments,
-                            helping reduce food waste in agricultural supply chains.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow Lite</span>
-                            <span class="tech-tag">MobileNet</span>
-                            <span class="tech-tag">Edge AI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/smshaqib" class="project-link" target="_blank">
-                                View Project →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <span class="project-type">Competitive Programming</span>
-                        <h3>Algorithm Portfolio</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">
-                            Collection of optimized solutions to complex algorithmic problems from platforms like
-                            Codeforces.
-                            Demonstrates strong problem-solving skills and mastery of data structures, algorithms, and
-                            computational thinking essential for AI research.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Algorithms</span>
-                            <span class="tech-tag">Data Structures</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/smshaqib" class="project-link" target="_blank">
-                                GitHub →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">RECOGNITION</span>
-                <h2 class="section-title">Awards & Achievements</h2>
-                <p class="section-description">
-                    Recognition for excellence in research, competitions, and academic performance
-                </p>
-            </div>
-
-            <div class="awards-grid">
-                <div class="award-card fade-in">
-                    <div class="award-icon">🎖️</div>
-                    <h3>Rank 4th in Batch</h3>
-                    <p class="award-event">Performance-based Scholarship</p>
-                    <p class="award-year">DIU | 2025</p>
-                </div>
-
-                <div class="award-card fade-in">
-                    <div class="award-icon">🥈</div>
-                    <h3>First Runner-Up</h3>
-                    <p class="award-event">Data Science Olympiad</p>
-                    <p class="award-year">Big Data and IoT | 2023</p>
-                </div>
-
-                <div class="award-card fade-in">
-                    <div class="award-icon">🥈</div>
-                    <h3>1st Runner Up</h3>
-                    <p class="award-event">DIU Accelerator Cup</p>
-                    <p class="award-year">Startup Competition | 2023</p>
-                </div>
-
-                <div class="award-card fade-in">
-                    <div class="award-icon">🎯</div>
-                    <h3>12th Position</h3>
-                    <p class="award-event">Unlock the Algorithm</p>
-                    <p class="award-year">Intra University Contest | 2023</p>
-                </div>
-
-                <div class="award-card fade-in">
-                    <div class="award-icon">🤝</div>
-                    <h3>Assistant Gen. Secretary</h3>
-                    <p class="award-event">DIU NLP and ML Lab</p>
-                    <p class="award-year">Leadership Role</p>
-                </div>
-
-                <div class="award-card fade-in">
-                    <div class="award-icon">📊</div>
-                    <h3>Organizer</h3>
-                    <p class="award-event">Crack Dataset Contest</p>
-                    <p class="award-year">DIU Intra Contest | 2024</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">TECHNICAL EXPERTISE</span>
-                <h2 class="section-title">Skills & Technologies</h2>
-                <p class="section-description">
-                    Tools and frameworks I use to bring research ideas to life
-                </p>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">🐍</div>
-                    <h3>Programming Languages</h3>
-                    <ul class="skill-list">
-                        <li>Python (Advanced)</li>
-                        <li>C, C++, Java</li>
-                        <li>SQL</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">🤖</div>
-                    <h3>Machine Learning & AI</h3>
-                    <ul class="skill-list">
-                        <li>TensorFlow & Keras</li>
-                        <li>PyTorch</li>
-                        <li>Scikit-learn</li>
-                        <li>Natural Language Processing</li>
-                        <li>Computer Vision (OpenCV)</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">🧠</div>
-                    <h3>Deep Learning</h3>
-                    <ul class="skill-list">
-                        <li>LSTM & Bi-LSTM</li>
-                        <li>Transformers & LLMs</li>
-                        <li>Transfer Learning</li>
-                        <li>CNN Architectures</li>
-                        <li>Reinforcement Learning</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">💬</div>
-                    <h3>NLP & LLMs</h3>
-                    <ul class="skill-list">
-                        <li>HuggingFace Transformers</li>
-                        <li>Sentiment Analysis</li>
-                        <li>Text Generation</li>
-                        <li>RAG (Retrieval-Augmented Generation)</li>
-                        <li>Conversational AI</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">🔬</div>
-                    <h3>Research & Development</h3>
-                    <ul class="skill-list">
-                        <li>Experimental Design</li>
-                        <li>Data Analysis & Visualization</li>
-                        <li>Academic Writing (LaTeX)</li>
-                        <li>Model Optimization</li>
-                        <li>Explainable AI (XAI)</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">🛠️</div>
-                    <h3>Tools & Frameworks</h3>
-                    <ul class="skill-list">
-                        <li>Jupyter Notebooks</li>
-                        <li>Git & GitHub</li>
-                        <li>Streamlit</li>
-                        <li>Docker</li>
-                        <li>Google Colab</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">💻</div>
-                    <h3>Competitive Programming</h3>
-                    <ul class="skill-list">
-                        <li>Data Structures</li>
-                        <li>Algorithms</li>
-                        <li>Problem Solving</li>
-                        <li>Codeforces</li>
-                        <li>Optimization Techniques</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">🌟</div>
-                    <h3>Research Interests</h3>
-                    <ul class="skill-list">
-                        <li>Intelligent Agents</li>
-                        <li>Multi-Agent Systems</li>
-                        <li>Autonomous Decision-Making</li>
-                        <li>Conversational AI</li>
-                        <li>Low-Resource NLP</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">LET'S COLLABORATE</span>
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-description">
-                    Open to research collaborations, project discussions, and opportunities in AI/ML
-                </p>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-card fade-in">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
+                <div class="sidebar-name">SM Shaqib</div>
+                <div class="sidebar-title">NLP Researcher · ML Engineer</div>
+                <div class="sidebar-meta">
+                    <span>Dhaka, Bangladesh</span>
+                    <span class="dot">•</span>
                     <a href="mailto:shaqib15-4614@diu.edu.bd">shaqib15-4614@diu.edu.bd</a>
                 </div>
 
-                <div class="contact-card fade-in">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/smshaqib/" target="_blank">linkedin.com/in/smshaqib</a>
-                </div>
-
-                <div class="contact-card fade-in">
-                    <div class="contact-icon">🏗️</div>
-                    <h3>GitHub</h3>
-                    <a href="https://github.com/smshaqib" target="_blank">github.com/smshaqib</a>
-                </div>
-
-                <div class="contact-card fade-in">
-                    <div class="contact-icon">🌐</div>
-                    <h3>Academic Profile</h3>
-                    <a href="https://sites.google.com/diu.edu.bd/smshaqib/home"
-                        target="_blank">sites.google.com/diu.edu.bd/smshaqib</a>
-                </div>
-
-                <div class="contact-card fade-in">
-                    <div class="contact-icon">📱</div>
-                    <h3>Phone</h3>
-                    <a href="tel:+8801966263544">+880 1966-263544</a>
-                </div>
-
-                <div class="contact-card fade-in">
-                    <div class="contact-icon">📍</div>
-                    <h3>Location</h3>
-                    <a>Dhaka, Bangladesh</a>
+                <div class="sidebar-cta">
+                    <a class="btn btn-primary btn-small" href="assets/docs/Academic_CV_Shaqib.pdf" download>
+                        Download CV
+                    </a>
+                    <a class="btn btn-secondary btn-small" href="#contact">
+                        Contact
+                    </a>
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="assets/docs/Academic_CV_Shaqib.pdf" class="btn btn-primary" download>
-                    Download Full CV (PDF)
-                </a>
-            </div>
-        </div>
-    </section>
+            <nav class="sidebar-nav" aria-label="Section navigation">
+                <a href="#about" class="sidebar-link">Overview</a>
+                <a href="#education" class="sidebar-link">Education</a>
+                <a href="#research" class="sidebar-link">Research & Publications</a>
+                <a href="#experience" class="sidebar-link">Research/Work Experience</a>
+                <a href="#projects" class="sidebar-link">Selected Projects</a>
+                <a href="#awards" class="sidebar-link">Awards</a>
+                <a href="#skills" class="sidebar-link">Skills</a>
+                <a href="#contact" class="sidebar-link">Contact</a>
+            </nav>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p class="footer-text">
-                Designed and built by SM Shaqib | Research Assistant @ DIU NLP & ML Lab
-            </p>
-            <div class="social-links">
-                <a href="https://github.com/smshaqib" class="social-link" target="_blank" aria-label="GitHub">🏗️</a>
-                <a href="https://www.linkedin.com/in/smshaqib/" class="social-link" target="_blank"
-                    aria-label="LinkedIn">💼</a>
-                <a href="https://sites.google.com/diu.edu.bd/smshaqib/home" class="social-link" target="_blank"
-                    aria-label="Website">🌐</a>
-                <a href="mailto:shaqib15-4614@diu.edu.bd" class="social-link" aria-label="Email">📧</a>
+            <div class="sidebar-footer">
+                <div class="sidebar-social">
+                    <a href="https://github.com/smshaqib" class="social-link" target="_blank"
+                        aria-label="GitHub">🏗️</a>
+                    <a href="https://www.linkedin.com/in/smshaqib/" class="social-link" target="_blank"
+                        aria-label="LinkedIn">💼</a>
+                    <a href="https://sites.google.com/diu.edu.bd/smshaqib/home" class="social-link" target="_blank"
+                        aria-label="Academic Website">🌐</a>
+                </div>
+                <div class="sidebar-footnote">Research & Engineering Portfolio · Updated 2026</div>
             </div>
-            <p class="footer-text" style="margin-top: 1rem; font-size: 0.9rem;">
-                &copy; 2025 SM Shaqib. All rights reserved.
-            </p>
-        </div>
-    </footer>
+        </aside>
 
-    <script src="assets/js/script.js"></script>
+        <main class="main" id="mainContent">
+            <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
+
+            <!-- Hero Section -->
+            <section class="hero" id="about">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1>SM Shaqib</h1>
+                        <h2 class="profile-title">Bridging Research & Application</h2>
+                        <p class="subtitle">Computer Vision · NLP · Deep Learning · AI Agent Developer</p>
+                        <p class="bio">
+                            My journey in AI bridges the gap between rigorous academic research and scalable production
+                            systems. Currently, I am an <strong>AI Agent Developer at StudyNet</strong>, building
+                            autonomous RAG systems, whereas my background as a <strong>Research Assistant</strong> at
+                            the DIU NLP & ML Lab is rooted in advancing Computer Vision and NLP. Driven by curiosity, I
+                            am constantly exploring new technologies to upgrade my capabilities and solve complex
+                            problems with intelligent solutions.
+                        </p>
+
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <div class="info-label">Research Interests</div>
+                                <div class="info-body">Computer Vision · NLP · Multimodal Research · Large Language
+                                    Models</div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-label">Data Science & Engineering</div>
+                                <div class="info-body">Data Analysis · Predictive Modeling · MLOps · Scalable System
+                                    Design</div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="cta-buttons">
+                            <a href="https://scholar.google.com/citations?user=nNnRwrwAAAAJ" class="btn btn-primary"
+                                target="_blank" rel="noopener">
+                                View Publications →
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                Get in Touch
+                            </a>
+                            <a href="assets/docs/Academic_CV_Shaqib.pdf" class="btn btn-secondary" download>
+                                Download CV (PDF)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="profile-wrapper">
+                            <div class="profile-ring"></div>
+                            <img src="assets/images/shaqib.jpg" alt="SM Shaqib" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Education Section -->
+            <section id="education">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <span class="section-label">ACADEMIC FOUNDATION</span>
+                        <h2 class="section-title">Education</h2>
+                        <p class="section-description">
+                            Building a strong foundation in computer science and engineering
+                        </p>
+                    </div>
+
+                    <div class="education-grid">
+                        <div class="education-card fade-in">
+                            <div class="education-header">
+                                <div class="education-info">
+                                    <h3>B.Sc. in Computer Science and Engineering</h3>
+                                    <p class="institution">Daffodil International University, Dhaka</p>
+                                </div>
+                                <span class="gpa-badge">3.92/4.00</span>
+                            </div>
+                            <p class="duration">Sep 2021 - Sep 2025</p>
+                            <p class="edu-details">
+                                Focused on artificial intelligence, machine learning, and natural language processing.
+                                Active member of the DIU NLP & ML Lab, contributing to state-of-the-art research
+                                and publishing in Q2 journals.
+                            </p>
+                        </div>
+
+                        <div class="education-card fade-in">
+                            <div class="education-header">
+                                <div class="education-info">
+                                    <h3>Higher Secondary Certificate (HSC)</h3>
+                                    <p class="institution">Dr. Mahbubur Rahman Mollah College</p>
+                                </div>
+                                <span class="gpa-badge">5.00/5.00</span>
+                            </div>
+                            <p class="duration">2018 - 2020</p>
+                        </div>
+
+                        <div class="education-card fade-in">
+                            <div class="education-header">
+                                <div class="education-info">
+                                    <h3>Secondary School Certificate (SSC)</h3>
+                                    <p class="institution">Motijheel Model High School & College</p>
+                                </div>
+                                <span class="gpa-badge">5.00/5.00</span>
+                            </div>
+                            <p class="duration">2016 - 2017</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research & Publications Section -->
+            <section id="research">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <span class="section-label">ACADEMIC CONTRIBUTIONS</span>
+                        <h2 class="section-title">Research & Publications</h2>
+                        <p class="section-description">
+                            Advancing the field through rigorous research in NLP, computer vision, and machine learning
+                        </p>
+                    </div>
+
+                    <div class="research-grid">
+                        <div class="research-card fade-in">
+                            <div class="research-meta">
+                                <span class="research-badge published">Discover Life (Q2)</span>
+                                <span class="research-badge">Explainable AI</span>
+                            </div>
+                            <h3>A transfer learning approach to classify insect diversity based on explainable AI</h3>
+                            <p class="research-authors">SM Shaqib et al. | 2025</p>
+                            <p class="research-description">
+                                Introduced an explainable AI framework for insect classification achieving high accuracy
+                                and
+                                interpretable insights. Published in Discover Life (Q2).
+                            </p>
+                        </div>
+
+                        <div class="research-card fade-in">
+                            <div class="research-meta">
+                                <span class="research-badge published">DIGITAL HEALTH (Q2)</span>
+                                <span class="research-badge">Medical AI</span>
+                            </div>
+                            <h3>Explainable AI for skin disease classification using Grad-CAM and transfer learning</h3>
+                            <p class="research-authors">SM Shaqib et al. | 2025</p>
+                            <p class="research-description">
+                                Developed a transparent classification system for skin diseases leveraging Grad-CAM for
+                                visual explanations and transfer learning for high accuracy. Published in DIGITAL
+                                HEALTH.
+                            </p>
+                        </div>
+
+                        <div class="research-card fade-in">
+                            <div class="research-meta">
+                                <span class="research-badge published">IEEE ICCCNT</span>
+                                <span class="research-badge">NLP</span>
+                            </div>
+                            <h3>Performance Analysis of LSTM and Bi-LSTM Model with Different Optimizers in Bangla
+                                Sentiment
+                                Analysis</h3>
+                            <p class="research-authors">SM Shaqib et al. | 2024</p>
+                            <p class="research-description">
+                                Explored LSTM/Bi-LSTM architectures for Bangla sentiment analysis, optimizing for high
+                                accuracy in low-resource language processing.
+                            </p>
+                        </div>
+
+                        <div class="research-card fade-in">
+                            <div class="research-meta">
+                                <span class="research-badge published">RTIP2R</span>
+                                <span class="research-badge">Segmentation</span>
+                            </div>
+                            <h3>Enhanced U-Net with VGG16 Backbone and Attention for Nasal Sinus Disease Segmentation
+                            </h3>
+                            <p class="research-authors">SM Shaqib et al. | 2025</p>
+                            <p class="research-description">
+                                Presented an automated segmentation system for nasal sinus diseases using a modified
+                                U-Net.
+                                Published in RTIP2R (In press).
+                            </p>
+                        </div>
+
+                        <div class="research-card fade-in">
+                            <div class="research-meta">
+                                <span class="research-badge published">arXiv</span>
+                                <span class="research-badge">Object Detection</span>
+                            </div>
+                            <h3>Vehicle Speed Detection System Utilizing YOLOv8</h3>
+                            <p class="research-authors">SM Shaqib et al. | 2024</p>
+                            <p class="research-description">
+                                Developed a real-time system for traffic monitoring and speed estimation using modern
+                                YOLOv8
+                                object detection. Available on arXiv:2406.07710.
+                            </p>
+                        </div>
+
+                        <div class="research-card fade-in">
+                            <div class="research-meta">
+                                <span class="research-badge">Additional Work</span>
+                            </div>
+                            <h3>Construction Safety & Agricultural AI</h3>
+                            <p class="research-description">
+                                Ongoing research in strawberry freshness evaluation (Springer Nature) and safety
+                                equipment
+                                detection using YOLOv7 (arXiv:2406.07707).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <span class="section-label">PROFESSIONAL JOURNEY</span>
+                        <h2 class="section-title">Experience</h2>
+                        <p class="section-description">
+                            Contributing to cutting-edge research and mentoring the next generation of AI practitioners
+                        </p>
+                    </div>
+
+                    <div class="experience-grid">
+                        <div class="experience-card fade-in current">
+                            <span class="current-badge">Current Role</span>
+                            <div class="experience-header">
+                                <div class="experience-title">
+                                    <h3>AI Agent Developer</h3>
+                                    <p class="experience-org">StudyNet</p>
+                                </div>
+                                <div class="experience-period">
+                                    Oct 2025 - Present
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Building an RAG-based LLM system using FAISS vector database and Django Framework.
+                                Developed custom agents to assist students in finding information related to higher
+                                education,
+                                optimizing information retrieval and user interaction.
+                            </p>
+                        </div>
+
+                        <div class="experience-card fade-in">
+                            <div class="experience-header">
+                                <div class="experience-title">
+                                    <h3>Research Assistant</h3>
+                                    <p class="experience-org">DIU NLP & ML Lab</p>
+                                </div>
+                                <div class="experience-period">
+                                    June 2025 - Dec 2025
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Collaborated with a professor from Deakin University, Australia, on detecting fraudulent
+                                activities in bKash online transactions using NLP-based techniques. Focus areas include
+                                sentiment analysis, transfer learning for computer vision, and LLM-powered tool
+                                development.
+                            </p>
+                        </div>
+
+                        <div class="experience-card fade-in">
+                            <div class="experience-header">
+                                <div class="experience-title">
+                                    <h3>Trainer</h3>
+                                    <p class="experience-org">Advance ML & DL Bootcamp, DIU NLP & ML Lab</p>
+                                </div>
+                                <div class="experience-period">
+                                    Sep 2024 - May 2025
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Trained 30+ students in ML/DL fundamentals and guided them through the research paper
+                                publication process. Delivered comprehensive training on neural networks, model
+                                development,
+                                and practical applications in real-world scenarios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <span class="section-label">BUILDING SOLUTIONS</span>
+                        <h2 class="section-title">Featured Projects</h2>
+                        <p class="section-description">
+                            Practical applications of AI and ML research in real-world scenarios
+                        </p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <div class="project-card fade-in">
+                            <div class="project-header">
+                                <span class="project-type">Medical AI</span>
+                                <h3>Nasal Sinus Disease Segmentation</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">
+                                    Developed an automated medical image segmentation platform using a modified U-Net
+                                    architecture with attention mechanisms. This system assists in diagnosing nasal
+                                    sinus
+                                    diseases with high precision and is deployed for clinical research exploration.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">U-Net</span>
+                                    <span class="tech-tag">Medical Imaging</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://huggingface.co/spaces/smshaqib" class="project-link"
+                                        target="_blank">
+                                        Hugging Face →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card fade-in">
+                            <div class="project-header">
+                                <span class="project-type">LLM Application</span>
+                                <h3>LLM-Powered PDF Summarization Tool</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">
+                                    Built an end-to-end NLP application that automates document analysis and
+                                    summarization using
+                                    HuggingFace API and Streamlit. The tool processes large PDFs, extracts key insights,
+                                    and
+                                    enables semantic search with interactive Q&A capabilities, showcasing practical
+                                    applications
+                                    of retrieval-augmented generation and LLM-based information extraction.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">HuggingFace</span>
+                                    <span class="tech-tag">Streamlit</span>
+                                    <span class="tech-tag">RAG</span>
+                                    <span class="tech-tag">NLP</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/smshaqib" class="project-link" target="_blank">
+                                        View Project →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card fade-in">
+                            <div class="project-header">
+                                <span class="project-type">Deep Learning</span>
+                                <h3>Bangla Sentiment Analysis System</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">
+                                    Developed a comprehensive sentiment analysis system for Bangla text using LSTM and
+                                    Bi-LSTM
+                                    architectures. Implemented multiple optimization strategies and conducted extensive
+                                    performance
+                                    analysis. The system demonstrates state-of-the-art accuracy in low-resource language
+                                    processing.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">Keras</span>
+                                    <span class="tech-tag">LSTM</span>
+                                    <span class="tech-tag">NLP</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/smshaqib" class="project-link" target="_blank">
+                                        GitHub →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card fade-in">
+                            <div class="project-header">
+                                <span class="project-type">Computer Vision</span>
+                                <h3>Construction Safety Monitoring System</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">
+                                    Created an AI-powered safety monitoring system that detects vehicle speeds and
+                                    recognizes
+                                    safety equipment in construction environments. Uses real-time object detection and
+                                    tracking
+                                    to ensure compliance with safety regulations and prevent accidents.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">PyTorch</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                    <span class="tech-tag">YOLO</span>
+                                    <span class="tech-tag">Computer Vision</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/smshaqib" class="project-link" target="_blank">
+                                        View Details →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card fade-in">
+                            <div class="project-header">
+                                <span class="project-type">Transfer Learning</span>
+                                <h3>Insect Classification with Explainable AI</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">
+                                    Implemented an explainable deep learning model for insect species classification.
+                                    The system
+                                    not only classifies insects with high accuracy but also visualizes the features that
+                                    contribute
+                                    to classification decisions, making the model interpretable for ecological
+                                    researchers.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">Grad-CAM</span>
+                                    <span class="tech-tag">Transfer Learning</span>
+                                    <span class="tech-tag">XAI</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/smshaqib" class="project-link" target="_blank">
+                                        GitHub →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card fade-in">
+                            <div class="project-header">
+                                <span class="project-type">Agricultural AI</span>
+                                <h3>Real-Time Strawberry Freshness Detector</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">
+                                    Developed an efficient real-time system for evaluating strawberry freshness using
+                                    transfer
+                                    learning. The lightweight model can run on edge devices and provides instant quality
+                                    assessments,
+                                    helping reduce food waste in agricultural supply chains.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">TensorFlow Lite</span>
+                                    <span class="tech-tag">MobileNet</span>
+                                    <span class="tech-tag">Edge AI</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/smshaqib" class="project-link" target="_blank">
+                                        View Project →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card fade-in">
+                            <div class="project-header">
+                                <span class="project-type">Competitive Programming</span>
+                                <h3>Algorithm Portfolio</h3>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">
+                                    Collection of optimized solutions to complex algorithmic problems from platforms
+                                    like
+                                    Codeforces.
+                                    Demonstrates strong problem-solving skills and mastery of data structures,
+                                    algorithms, and
+                                    computational thinking essential for AI research.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">C++</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Algorithms</span>
+                                    <span class="tech-tag">Data Structures</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/smshaqib" class="project-link" target="_blank">
+                                        GitHub →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards Section -->
+            <section id="awards">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <span class="section-label">RECOGNITION</span>
+                        <h2 class="section-title">Awards & Achievements</h2>
+                        <p class="section-description">
+                            Recognition for excellence in research, competitions, and academic performance
+                        </p>
+                    </div>
+
+                    <div class="awards-grid">
+                        <div class="award-card fade-in">
+                            <div class="award-icon">🎖️</div>
+                            <h3>Rank 4th in Batch</h3>
+                            <p class="award-event">Performance-based Scholarship</p>
+                            <p class="award-year">DIU | 2025</p>
+                        </div>
+
+                        <div class="award-card fade-in">
+                            <div class="award-icon">🥈</div>
+                            <h3>First Runner-Up</h3>
+                            <p class="award-event">Data Science Olympiad</p>
+                            <p class="award-year">Big Data and IoT | 2023</p>
+                        </div>
+
+                        <div class="award-card fade-in">
+                            <div class="award-icon">🥈</div>
+                            <h3>1st Runner Up</h3>
+                            <p class="award-event">DIU Accelerator Cup</p>
+                            <p class="award-year">Startup Competition | 2023</p>
+                        </div>
+
+                        <div class="award-card fade-in">
+                            <div class="award-icon">🎯</div>
+                            <h3>12th Position</h3>
+                            <p class="award-event">Unlock the Algorithm</p>
+                            <p class="award-year">Intra University Contest | 2023</p>
+                        </div>
+
+                        <div class="award-card fade-in">
+                            <div class="award-icon">🤝</div>
+                            <h3>Assistant Gen. Secretary</h3>
+                            <p class="award-event">DIU NLP and ML Lab</p>
+                            <p class="award-year">Leadership Role</p>
+                        </div>
+
+                        <div class="award-card fade-in">
+                            <div class="award-icon">📊</div>
+                            <h3>Organizer</h3>
+                            <p class="award-event">Crack Dataset Contest</p>
+                            <p class="award-year">DIU Intra Contest | 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <span class="section-label">TECHNICAL EXPERTISE</span>
+                        <h2 class="section-title">Skills & Technologies</h2>
+                        <p class="section-description">
+                            Tools and frameworks I use to bring research ideas to life
+                        </p>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">🐍</div>
+                            <h3>Programming Languages</h3>
+                            <ul class="skill-list">
+                                <li>Python (Advanced)</li>
+                                <li>C, C++, Java</li>
+                                <li>SQL</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">🤖</div>
+                            <h3>Machine Learning & AI</h3>
+                            <ul class="skill-list">
+                                <li>TensorFlow & Keras</li>
+                                <li>PyTorch</li>
+                                <li>Scikit-learn</li>
+                                <li>Natural Language Processing</li>
+                                <li>Computer Vision (OpenCV)</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">🧠</div>
+                            <h3>Deep Learning</h3>
+                            <ul class="skill-list">
+                                <li>LSTM & Bi-LSTM</li>
+                                <li>Transformers & LLMs</li>
+                                <li>Transfer Learning</li>
+                                <li>CNN Architectures</li>
+                                <li>Reinforcement Learning</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">💬</div>
+                            <h3>NLP & LLMs</h3>
+                            <ul class="skill-list">
+                                <li>HuggingFace Transformers</li>
+                                <li>Sentiment Analysis</li>
+                                <li>Text Generation</li>
+                                <li>RAG (Retrieval-Augmented Generation)</li>
+                                <li>Conversational AI</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">🔬</div>
+                            <h3>Research & Development</h3>
+                            <ul class="skill-list">
+                                <li>Experimental Design</li>
+                                <li>Data Analysis & Visualization</li>
+                                <li>Academic Writing (LaTeX)</li>
+                                <li>Model Optimization</li>
+                                <li>Explainable AI (XAI)</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">🛠️</div>
+                            <h3>Tools & Frameworks</h3>
+                            <ul class="skill-list">
+                                <li>Jupyter Notebooks</li>
+                                <li>Git & GitHub</li>
+                                <li>Streamlit</li>
+                                <li>Docker</li>
+                                <li>Google Colab</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">💻</div>
+                            <h3>Competitive Programming</h3>
+                            <ul class="skill-list">
+                                <li>Data Structures</li>
+                                <li>Algorithms</li>
+                                <li>Problem Solving</li>
+                                <li>Codeforces</li>
+                                <li>Optimization Techniques</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">🌟</div>
+                            <h3>Research Interests</h3>
+                            <ul class="skill-list">
+                                <li>Intelligent Agents</li>
+                                <li>Multi-Agent Systems</li>
+                                <li>Autonomous Decision-Making</li>
+                                <li>Conversational AI</li>
+                                <li>Low-Resource NLP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <span class="section-label">LET'S COLLABORATE</span>
+                        <h2 class="section-title">Get In Touch</h2>
+                        <p class="section-description">
+                            Open to research collaborations, project discussions, and opportunities in AI/ML
+                        </p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <div class="contact-card fade-in">
+                            <div class="contact-icon">📧</div>
+                            <h3>Email</h3>
+                            <a href="mailto:shaqib15-4614@diu.edu.bd">shaqib15-4614@diu.edu.bd</a>
+                        </div>
+
+                        <div class="contact-card fade-in">
+                            <div class="contact-icon">💼</div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/smshaqib/" target="_blank">linkedin.com/in/smshaqib</a>
+                        </div>
+
+                        <div class="contact-card fade-in">
+                            <div class="contact-icon">🏗️</div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/smshaqib" target="_blank">github.com/smshaqib</a>
+                        </div>
+
+                        <div class="contact-card fade-in">
+                            <div class="contact-icon">🌐</div>
+                            <h3>Academic Profile</h3>
+                            <a href="https://sites.google.com/diu.edu.bd/smshaqib/home"
+                                target="_blank">sites.google.com/diu.edu.bd/smshaqib</a>
+                        </div>
+
+                        <div class="contact-card fade-in">
+                            <div class="contact-icon">📱</div>
+                            <h3>Phone</h3>
+                            <a href="tel:+8801966263544">+880 1966-263544</a>
+                        </div>
+
+                        <div class="contact-card fade-in">
+                            <div class="contact-icon">📍</div>
+                            <h3>Location</h3>
+                            <a>Dhaka, Bangladesh</a>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <a href="assets/docs/Academic_CV_Shaqib.pdf" class="btn btn-primary" download>
+                            Download Full CV (PDF)
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="footer-content">
+                    <p class="footer-text">
+                        Designed and built by SM Shaqib | Research Assistant @ DIU NLP & ML Lab
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/smshaqib" class="social-link" target="_blank"
+                            aria-label="GitHub">🏗️</a>
+                        <a href="https://www.linkedin.com/in/smshaqib/" class="social-link" target="_blank"
+                            aria-label="LinkedIn">💼</a>
+                        <a href="https://sites.google.com/diu.edu.bd/smshaqib/home" class="social-link" target="_blank"
+                            aria-label="Website">🌐</a>
+                        <a href="mailto:shaqib15-4614@diu.edu.bd" class="social-link" aria-label="Email">📧</a>
+                    </div>
+                    <p class="footer-text" style="margin-top: 1rem; font-size: 0.9rem;">
+                        &copy; 2025 SM Shaqib. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+
+            <script src="assets/js/script.js"></script>
+        </main>
+    </div>
 </body>
 
 </html>

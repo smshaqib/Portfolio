@@ -1,4 +1,4 @@
 @echo off
 echo Opening Portfolio...
 start index.html
-pause
+exit /b 0
