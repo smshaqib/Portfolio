@@ -16,6 +16,12 @@
     --accent-tertiary: #ec4899;
     --border: rgba(255, 255, 255, 0.1);
     --glow: rgba(99, 102, 241, 0.3);
+
+    /* Layout Widths (Customizable) */
+    --card-width-research: 950px;
+    --card-width-experience: 650px;
+    --card-width-info-grid: 750px;
+    --card-width-projects-grid: 1100px;
 }
 
 [data-theme="light"] {
@@ -443,8 +449,8 @@ nav.scrolled {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin: 1.5rem 0 2rem;
-    max-width: 600px;
-    /* Reduced from 720px */
+    max-width: var(--card-width-info-grid);
+    /* Customizable width */
 }
 
 .info-card {
@@ -585,17 +591,16 @@ section {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     /* Use auto-fill to prevent stretching */
     gap: 2rem;
-    justify-content: center;
-    /* Center the grid items */
+    /* justify-content: center; Removed centering */
 }
 
 .experience-card {
     /* ... existing styles ... */
-    max-width: 500px;
+    max-width: var(--card-width-experience);
+    /* Customizable width */
     /* Enforce max width */
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin: 0 auto; Removed centering */
 }
 
 
@@ -768,6 +773,9 @@ section {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    max-width: var(--card-width-research);
+    /* Customizable width */
+    /* margin: 0 auto; Removed centering */
 }
 
 .research-card::after {
@@ -825,9 +833,9 @@ section {
 }
 
 .research-preview-image {
-    width: 280px;
+    width: 300px;
     /* Fixed width for side layout */
-    height: 120px;
+    height: 190px;
     /* Reduced height from 180px */
     /* Reduced height from 200px */
     /* Fixed height for consistency */
@@ -843,6 +851,11 @@ section {
     /* Prevent shrinking */
     padding: 0.5rem;
     /* Small padding inside white box */
+    cursor: pointer;
+}
+
+a .research-preview-image {
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -874,6 +887,16 @@ section {
     z-index: 1;
 }
 
+.research-card h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.research-card h3 a:hover {
+    color: var(--accent-primary);
+}
+
 .research-authors {
     color: var(--text-muted);
     font-size: 0.9rem;
@@ -891,15 +914,25 @@ section {
     z-index: 1;
 }
 
+.research-description a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.research-description a:hover {
+    color: var(--accent-primary);
+}
+
 /* Projects Grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* Reduced minmax width */
     gap: 2rem;
-    max-width: 900px;
-    /* Constraint grid width */
-    margin: 0 auto;
+    max-width: var(--card-width-projects-grid);
+    /* Customizable width */
+    /* margin: 0 auto; Removed centering */
 }
 
 .project-card {
@@ -1403,6 +1436,124 @@ footer {
 
     .mobile-toggle {
         display: block;
+    }
+
+    /* Enhanced Mobile Responsiveness */
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .awards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Override custom widths for mobile */
+    .experience-card,
+    .research-card,
+    .project-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Hero Section */
+    .hero {
+        padding: 1.5rem 1rem;
+    }
+
+    .profile-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .profile-title {
+        font-size: 1.4rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-content .bio {
+        font-size: 0.95rem;
+    }
+
+    /* Section Titles */
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-label {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Cards */
+    .experience-card,
+    .research-card,
+    .project-card,
+    .award-card,
+    .skill-card {
+        padding: 0.6rem;
+    }
+
+    .project-header,
+    .project-body {
+        padding: 0.6rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Research Images */
+    .research-preview-image {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    /* Awards Grid */
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Cards */
+    .contact-card {
+        padding: 1.5rem;
     }
 }
 
