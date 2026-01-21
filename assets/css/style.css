@@ -377,8 +377,8 @@ nav.scrolled {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 6rem 2rem 4rem;
-    position: relative;
+    padding: 2rem 1.5rem 2rem;
+    /* Reduced from 6rem 2rem 4rem */
 }
 
 .hero-container {
@@ -391,7 +391,8 @@ nav.scrolled {
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+    /* Reduced from 4rem */
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 0.5rem;
@@ -403,7 +404,8 @@ nav.scrolled {
 }
 
 .profile-title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    /* Reduced from 2.2rem */
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-primary);
@@ -411,14 +413,16 @@ nav.scrolled {
 }
 
 .hero-content .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    /* Reduced from 1.5rem */
     color: var(--text-secondary);
     margin-bottom: 2rem;
     font-weight: 300;
 }
 
 .hero-content .bio {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    /* Reduced from 1.1rem */
     color: var(--text-secondary);
     line-height: 1.8;
     margin-bottom: 2.5rem;
@@ -439,7 +443,8 @@ nav.scrolled {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin: 1.5rem 0 2rem;
-    max-width: 720px;
+    max-width: 600px;
+    /* Reduced from 720px */
 }
 
 .info-card {
@@ -539,8 +544,8 @@ nav.scrolled {
 /* Section Styles */
 /* Section Styles */
 section {
-    padding: 4rem 2rem;
-    /* Reduced padding */
+    padding: 2.5rem 1.5rem;
+    /* Reduced padding from 4rem 2rem */
     position: relative;
 }
 
@@ -562,11 +567,11 @@ section {
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2.2rem;
+    /* Reduced from 3rem */
     font-weight: 800;
-    margin-top: 0.5rem;
-    /* Added margin top */
-    margin-bottom: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
     background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -586,59 +591,80 @@ section {
 
 .experience-card {
     /* ... existing styles ... */
-    max-width: 600px;
+    max-width: 500px;
     /* Enforce max width */
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
+
+
 .section-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    /* Reduced from 1.2rem */
     color: var(--text-secondary);
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-/* Education Grid */
+#education {
+    padding: 2rem 2rem;
+    /* Reduced padding for compact look */
+}
+
+#education .education-card {
+    padding: 1rem 0;
+    /* Further reduced */
+}
+
+/* Education Grid - Simple List */
 .education-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 .education-card {
-    background: var(--bg-card);
-    padding: 2.5rem;
-    border-radius: 20px;
-    border: 1px solid var(--border);
-    transition: all 0.3s ease;
+    background: transparent;
+    padding: 1.5rem 0;
+    /* Vertical padding only */
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    transition: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.education-card:last-child {
+    border-bottom: none;
+}
+
 .education-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--accent-primary);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transform: none;
+    box-shadow: none;
 }
 
 .education-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    /* Reduced header margin */
 }
 
 .education-info h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    /* Smaller title */
     color: var(--accent-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .education-info .institution {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    /* Smaller custom font size */
     font-weight: 600;
     color: var(--text-primary);
 }
@@ -668,7 +694,10 @@ section {
 /* Updated Experience Card */
 .experience-card {
     background: var(--bg-card);
-    padding: 2.5rem;
+    background: var(--bg-card);
+    padding: 0.8rem;
+    /* Aggressively reduced from 1.5rem */
+    /* Reduced from 2.5rem */
     border-radius: 20px;
     border: 1px solid var(--border);
     transition: all 0.3s ease;
@@ -700,13 +729,15 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    /* Reduced from 1.5rem */
     flex-wrap: wrap;
     gap: 1rem;
 }
 
 .experience-title h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    /* Reduced from 1.6rem */
     color: var(--accent-primary);
     margin-bottom: 0.3rem;
 }
@@ -731,7 +762,9 @@ section {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 20px;
-    padding: 3rem;
+    border-radius: 20px;
+    padding: 0.8rem;
+    /* Aggressively reduced from 1.25rem */
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -757,7 +790,8 @@ section {
 .research-meta {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    /* Reduced from 1rem */
     flex-wrap: wrap;
 }
 
@@ -771,15 +805,70 @@ section {
     border: 1px solid rgba(139, 92, 246, 0.2);
 }
 
+/* Fixed syntax error */
 .research-badge.published {
     background: rgba(34, 197, 94, 0.1);
     color: #22c55e;
     border-color: rgba(34, 197, 94, 0.2);
 }
 
+/* Side-by-side layout for card with image */
+.research-card.has-image {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.research-card.has-image .research-content {
+    flex: 1;
+}
+
+.research-preview-image {
+    width: 280px;
+    /* Fixed width for side layout */
+    height: 120px;
+    /* Reduced height from 180px */
+    /* Reduced height from 200px */
+    /* Fixed height for consistency */
+    /* Contain to show full diagram */
+    background: white;
+    /* White bg for diagram */
+    border-radius: 12px;
+    margin: 0;
+    /* Remove margin */
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    /* Prevent shrinking */
+    padding: 0.5rem;
+    /* Small padding inside white box */
+}
+
+@media (max-width: 768px) {
+    .research-card.has-image {
+        flex-direction: column-reverse;
+        /* Image on bottom */
+        align-items: stretch;
+    }
+
+    .research-preview-image {
+        width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+}
+
+.research-card:hover .research-preview-image {
+    transform: scale(1.02);
+}
+
 .research-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 1.35rem;
+    /* Slightly smaller */
+    /* Reduced from 1.8rem */
+    margin-bottom: 0.2rem;
+    /* Tighter margin */
     color: var(--text-primary);
     position: relative;
     z-index: 1;
@@ -787,15 +876,17 @@ section {
 
 .research-authors {
     color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    /* Tighter margin */
     position: relative;
     z-index: 1;
 }
 
 .research-description {
     color: var(--text-secondary);
-    line-height: 1.8;
+    line-height: 1.5;
+    /* Reduced from 1.8 */
     position: relative;
     z-index: 1;
 }
@@ -803,8 +894,12 @@ section {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Reduced minmax width */
     gap: 2rem;
+    max-width: 900px;
+    /* Constraint grid width */
+    margin: 0 auto;
 }
 
 .project-card {
@@ -840,7 +935,9 @@ section {
 }
 
 .project-header {
-    padding: 2rem;
+    padding: 0.8rem;
+    /* Aggressively reduced from 1.5rem */
+    /* Reduced from 2rem */
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
 }
 
@@ -861,7 +958,9 @@ section {
 }
 
 .project-body {
-    padding: 2rem;
+    padding: 0.8rem;
+    /* Aggressively reduced from 1.5rem */
+    /* Reduced from 2rem */
 }
 
 .project-description {
@@ -972,7 +1071,8 @@ section {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 20px;
-    padding: 2.5rem;
+    padding: 0.8rem;
+    /* Aggressively reduced from 1.5rem */
     transition: all 0.3s ease;
 }
 

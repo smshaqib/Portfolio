@@ -108,6 +108,8 @@ window.addEventListener('scroll', () => {
 
     if (heroVisual && scrolled < window.innerHeight) {
         heroVisual.style.transform = `translateY(${scrolled * 0.2}px)`;
+        // Apply same fade out to visual
+        heroVisual.style.opacity = Math.max(0, 1 - (scrolled / window.innerHeight) * 1.5);
     }
 });
 
